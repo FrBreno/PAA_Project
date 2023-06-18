@@ -1,5 +1,10 @@
 # Projeto da disciplina de PAA (Projeto e Análise de Algoritmos)
 
+Colaboradores:
+- [Guilherme dos Santos](https://github.com/Guilhermedsc)
+- [Francisco Breno](https://github.com/FrBreno)
+- [Pedro Neves]()
+
 Este projeto foi criado com o intuito de enfatizar os conhecimentos adquiridos durante a disciplica. Abaixo será descrito o problema abordado e os passos que tomamos para resolvê-lo.
 
 ## Encontre maneiras totais de chegar ao nº degrau com no máximo 'm' passos
@@ -457,6 +462,9 @@ Em seguida, como achamos que nosso algoritmo executa em tempo exponencial, plota
 &nbsp;
 <div align="center">
     <img src="assets/grafico2.png" alt="Gráfico 2" width="400"/>
+</div>
+&nbsp;
+<div align="center">
     <img src="assets/grafico3.png" alt="Gráfico 3" width="400"/>
 </div>
 &nbsp;
