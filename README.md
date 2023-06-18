@@ -7,7 +7,7 @@ Este projeto foi criado com o intuito de enfatizar os conhecimentos adquiridos d
 ### 1. Descrição do problema
 
 <p style="text-align: justify;">
-Dada uma escada, encontre o número total de maneiras de chegar ao n-ésimo degrau a partir da base da escada quando uma pessoa só pode subir no máximo m degraus de cada vez. Por exemplo, considere que a entrada do algoritmo seja de chegar ao quarto degrau da escada (n = 4) onde a pessoa só pode subir no máximo dois degraus de cada vez (m = 2). A saída do algoritmo será o **total de maneiras** de chegar ao 4° degrau com no máximo 2 degraus. Analisando o problema manualmente, temos as seguintes formas de resolver essa ocorrência: 
+Dada uma escada, encontre o número total de maneiras de chegar ao n-ésimo degrau a partir da base da escada quando uma pessoa só pode subir no máximo m degraus de cada vez. Por exemplo, considere que a entrada do algoritmo seja de chegar ao quarto degrau da escada (n = 4) onde a pessoa só pode subir no máximo dois degraus de cada vez (m = 2). A saída do algoritmo será o <strong>total de maneiras</strong> de chegar ao 4° degrau com no máximo 2 degraus. Analisando o problema manualmente, temos as seguintes formas de resolver essa ocorrência: 
 </p>
 
 * 1 degrau + 1 degrau + 1 degrau + 1 degrau
@@ -50,9 +50,11 @@ A complexidade de tempo da solução é exponencial, pois o problema exibe subpr
 Cada algoritmo será aprofundado nos tópicos a seguir.
 
 ### 2. ALGORITMO 01 - Recursivo
-
+<p style="text-align: justify;">
 Esse algoritmo apresenta uma versão recursiva da solução do problema, sendo executado em complexidade de tempo exponencial, uma vez que são calculadas soluções para os mesmos subproblemas repetidamente.  
+</p>
 A seguir temos o pseudocódigo.
+
 ```C++
 totalWays(n, m) 
  
@@ -75,10 +77,11 @@ A função recursiva **totalWays** apresenta no seu código pré-loop o tratamen
 - Caso base  
 Consiste em um **if** que testa se a entrada n é um valor nulo e retorna 1. 
 
-Após o tratamento dos casos bases, a função inicializa uma variável de nome **count** para fazer o papel de contador e inicia o loop. O loop incrementa essa variável com o retorno da chamada recursiva de **totalWays**, onde o valor de n é decrementado pelo valor i que vai de 1 até o número menor ou igual a m no loop, desde que (n - i) >= 0 retorne verdadeiro, uma vez que nosso algoritmo não recebe números negativos como entrada.
-	Após o término do loop, a função retorna o valor de **count**.
+<p style="text-align: justify;">
+Após o tratamento dos casos bases, a função inicializa uma variável de nome <strong>count</strong> para fazer o papel de contador e inicia o loop. O loop incrementa essa variável com o retorno da chamada recursiva de <strong>totalWays</strong>, onde o valor de n é decrementado pelo valor i que vai de 1 até o número menor ou igual a m no loop, desde que (n - i) >= 0 retorne verdadeiro, uma vez que nosso algoritmo não recebe números negativos como entrada. Após o término do loop, a função retorna o valor de <strong>count</strong>.
+</p>
 
-#### 2.1. Corretude
+#### 2.1 - Corretude
 - Especificação:
   1. Entrada dois números inteiros positivos n e m.
   1. Saída um número inteiro maior que 0.
@@ -91,9 +94,15 @@ Após o tratamento dos casos bases, a função inicializa uma variável de nome 
 - Finalização:
     1. Após sair do looping ele retorna o valor de count que será um número inteiro maior que zero.
 
-### 2.2 - Exemplo de execução
+#### 2.2 - Exemplo de execução
+<p style="text-align: justify;">
 Neste caso com algoritmo recursivo, o exemplo será demonstrado através da Árvore de Recursividade, onde através dela é possível mostrar de forma simples todas as chamadas recursivas do algoritmo. Segue a imagem abaixo:
+</p>
 
+<<<<<<< HEAD
 <div align="center">
 <img src="assets/arvRec.png" alt="Árvore de Recursividade" style="max-width: 500px;"/>
 </div>
+=======
+<img src="assets/arvRec.png" alt="Árvore de Recursividade" width="500"/>
+>>>>>>> 9cef5d420f9c461eca9e7b3bd0af5dbad7fbfb16
