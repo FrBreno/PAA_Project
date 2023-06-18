@@ -91,3 +91,7 @@ Após o tratamento dos casos bases, a função inicializa uma variável de nome 
 - Finalização:
     1. Após sair do looping ele retorna o valor de count que será um número inteiro maior que zero.
 
+### 2.2 - Exemplo de execução
+Neste caso com algoritmo recursivo, o exemplo será demonstrado através da Árvore de Recursividade, onde através dela é possível mostrar de forma simples todas as chamadas recursivas do algoritmo. Segue a imagem abaixo:
+
+<img src="assets/arvRec.png" alt="Árvore de Recursividade" width="500"/>
