@@ -94,4 +94,6 @@ Após o tratamento dos casos bases, a função inicializa uma variável de nome 
 ### 2.2 - Exemplo de execução
 Neste caso com algoritmo recursivo, o exemplo será demonstrado através da Árvore de Recursividade, onde através dela é possível mostrar de forma simples todas as chamadas recursivas do algoritmo. Segue a imagem abaixo:
 
-<img src="assets/arvRec.png" alt="Árvore de Recursividade" width="500"/>
+<div align="center">
+<img src="assets/arvRec.png" alt="Árvore de Recursividade" style="max-width: 500px;"/>
+</div>
