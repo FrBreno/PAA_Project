@@ -100,11 +100,9 @@ Consiste em um **if** que testa se a entrada n é um valor nulo e retorna 1.
 </p>
 &nbsp;
 <div align="center">
-    <img src="assets/arvRec.png" alt="Árvore de Recursividade" style="max-width: 500px;"/>
+    <img src="assets/arvRec.png" alt="Árvore de Recursividade" style="max-width: 400px;"/>
 </div>
 &nbsp;
-
-<img src="assets/arvRec.png" alt="Árvore de Recursividade" width="500"/>
 
 ### 3. ALGORITMO 02 - Abordagem de baixo para cima  
 <p style="text-align: justify;">
@@ -180,8 +178,8 @@ totalWays(n, m)
 </p>
 &nbsp;
 <div align="center">
-    <img src="assets/Tabela_dinâmica01.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
-    <img src="assets/Tabela_dinâmica02.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
+    <img src="assets/Tabela_dinâmica01.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
+    <img src="assets/Tabela_dinâmica02.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
 </div>
 &nbsp;
 <p style="text-align: justify;">
@@ -192,8 +190,8 @@ totalWays(n, m)
 </p>
 &nbsp;
 <div align="center">
-    <img src="assets/Tabela_dinâmica03.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
-    <img src="assets/Tabela_dinâmica04.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
+    <img src="assets/Tabela_dinâmica03.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
+    <img src="assets/Tabela_dinâmica04.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
 </div>
 &nbsp;
 <p style="text-align: justify;">
@@ -206,9 +204,9 @@ totalWays(n, m)
 #### 3.3. Exemplo 02 (n = 4 e m = 4)
 - Dinâmico.  
 <div align="center">
-    <img src="assets/Tabela_dinâmica05.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
-    <img src="assets/Tabela_dinâmica06.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
-    <img src="assets/Tabela_dinâmica07.png" alt="Tabela dinâmica" style="max-width: 500px;"/>
+    <img src="assets/Tabela_dinâmica05.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
+    <img src="assets/Tabela_dinâmica06.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
+    <img src="assets/Tabela_dinâmica07.png" alt="Tabela dinâmica" style="max-width: 400px;"/>
 </div>
 &nbsp;
 
@@ -448,17 +446,20 @@ n = 31  m = 31  362.3291726112366
 <p style="text-align: justify;">
 A partir dos resultados obtidos, vamos plotar o gráfico de T(n) em função de n para visualizarmos a curva da função exponencial, desconsiderando as entradas em que o tempo de execução foi igual a 0.
 </p>
-
-<img src="assets/grafico1.png" alt="Gráfico 1" width="500"/>
-
+&nbsp;
+<div align="center">
+    <img src="assets/grafico1.png" alt="Gráfico 1" width="400"/>
+</div>
+&nbsp;
 <p style="text-align: justify;">
 Em seguida, como achamos que nosso algoritmo executa em tempo exponencial, plotamos o gráfico de lg T(n) em função de n e obtivemos o slope, que será utilizado para determinar o valor de b.
 </p>
-
-<img src="assets/grafico2.png" alt="Gráfico 2" width="500"/>
-
-<img src="assets/grafico3.png" alt="Gráfico 3" width="500"/>
-
+&nbsp;
+<div align="center">
+    <img src="assets/grafico2.png" alt="Gráfico 2" width="400"/>
+    <img src="assets/grafico3.png" alt="Gráfico 3" width="400"/>
+</div>
+&nbsp;
 <p style="text-align: justify;">
 Levando em conta o intervalo de confiança, vamos aproximar o valor do nosso slope para 1. Dessa forma, utilizamos a fórmula da inclinação da reta a * lg b = slope para calcularmos o valor de b.
 </p>
@@ -504,9 +505,11 @@ T(32) ≅  724,6584 segundos
 ```
 
 A seguir temos o valor do tempo de execução obtido pelo algoritmo com as entradas n e m iguais a 32.
-
-<img src="assets/grafico4.png" alt="Gráfico 4" width="500"/>
-
+&nbsp;
+<div align="center"> 
+    <img src="assets/grafico4.png" alt="Gráfico 4" width="400"/>
+</div>
+&nbsp;
 #### 6.5. Diferença percentual entre o valor previsto e o valor medido
 
 ```
