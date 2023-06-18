@@ -49,6 +49,48 @@ A complexidade de tempo da solução é exponencial, pois o problema exibe subpr
 
 Cada algoritmo será aprofundado nos tópicos a seguir.
 
+### 2. ALGORITMO 01 - Recursivo
+
+Esse algoritmo apresenta uma versão recursiva da solução do problema, sendo executado em complexidade de tempo exponencial, uma vez que são calculadas soluções para os mesmos subproblemas repetidamente.  
+A seguir temos o pseudocódigo.
+```C++
+totalWays(n, m) 
+ 
+    // Entradas: Dois inteiros n e m, com n >= 0 e m > 0 que representam as escadas e os passos respectivamente.
+    // Saída: Um número inteiro maior ou igual a zero que representa o total de formas que se pode chegar ao n-ésimo degrau. 
+
+    // Caso base 1: 1 caminho (sem passos)
+    se n = 0 então
+      retorne 1
+
+    count <- 0
+    para i de 1 até m enquanto (n - i >= 0) faça
+      count <- count + totalWays(n - i, m) // Chamada recursiva.
+    fim para
+   
+    retorne count
+```  
+
+A função recursiva **totalWays** apresenta no seu código pré-loop o tratamento de dois casos bases:
+- Caso base  
+Consiste em um **if** que testa se a entrada n é um valor nulo e retorna 1. 
+
+Após o tratamento dos casos bases, a função inicializa uma variável de nome **count** para fazer o papel de contador e inicia o loop. O loop incrementa essa variável com o retorno da chamada recursiva de **totalWays**, onde o valor de n é decrementado pelo valor i que vai de 1 até o número menor ou igual a m no loop, desde que (n - i) >= 0 retorne verdadeiro, uma vez que nosso algoritmo não recebe números negativos como entrada.
+	Após o término do loop, a função retorna o valor de **count**.
+
+#### 2.1. Corretude
+- Especificação:
+  1. Entrada dois números inteiros positivos n e m.
+  1. Saída um número inteiro maior que 0.
+- Invariante:
+  1. Variável i que irá percorrer de 1 até m e fará a chamada recursiva receber sempre n - i, até n = 0.
+- Condição de saída:
+    1. Se por acaso passar pela a condição do caso base e entrar ele irá retornar um valor dentro da recursividade e fechará um galho da árvore binária.
+- Estabeleça o invariante do loop:
+    1. São os casos bases, se por acaso o código executar as condições do caso e não entrar dentro deles ele irá realizar o looping e se invariante.
+- Finalização:
+    1. Após sair do looping ele retorna o valor de count que será um número inteiro maior que zero.
+
 ### 2.2 - Exemplo de execução
 Neste caso com algoritmo recursivo, o exemplo será demonstrado através da Árvore de Recursividade, onde através dela é possível mostrar de forma simples todas as chamadas recursivas do algoritmo. Segue a imagem abaixo:
 
