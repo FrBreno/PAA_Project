@@ -48,3 +48,8 @@ A complexidade de tempo da solução é exponencial, pois o problema exibe subpr
 É uma abordagem de baixo para cima onde podemos usar a tabulação para resolver esse problema de forma ascendente. A ideia principal é construir um array temporário que armazena os resultados de cada subproblema usando os resultados já computados dos subproblemas menores.
 
 Cada algoritmo será aprofundado nos tópicos a seguir.
+
+### 2.2 - Exemplo de execução
+Neste caso com algoritmo recursivo, o exemplo será demonstrado através da Árvore de Recursividade, onde através dela é possível mostrar de forma simples todas as chamadas recursivas do algoritmo. Segue a imagem abaixo:
+
+<img src="assets/arvRec.png" alt="Árvore de Recursividade" width="500"/>
